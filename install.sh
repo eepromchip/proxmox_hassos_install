@@ -36,7 +36,7 @@ with open('/etc/pve/.vmlist') as vmlist:
 if 'ids' not in vmids:
     print(100)
 else:
-    last_vm = sorted(vmids['ids'].keys())[-1:][0]
+    last_vm = sorted(vmids['ids'].keys())[+1:][0]
     print(int(last_vm)+1)
 EOF
 )
